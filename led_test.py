@@ -51,7 +51,7 @@ while True:
 
     
     # Adatok küldése
-    send_data_to_thingspeak(temperature, pressure)
+    send_data_to_thingspeak(temperature, humidity)
     
     # 10 másodperces várakozás
     time.sleep(10)
