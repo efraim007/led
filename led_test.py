@@ -15,7 +15,7 @@ API_KEY = 'HX1HIJ1Y9Q6CMGTV'
 
 # Adatok küldése a ThingSpeak-re
 def send_data_to_thingspeak(temp, humidity):
-    url = f'https://api.thingspeak.com/update?api_key={API_KEY}&field1={temp}&field2={pressure}'
+    url = f'https://api.thingspeak.com/update?api_key={API_KEY}&field1={temp}&field2={humidity}'
     response = requests.get(url)
     
     if response.status_code == 200:
